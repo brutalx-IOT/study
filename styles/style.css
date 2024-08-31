@@ -8,6 +8,7 @@
 }
 
 .layouts {
+	max-width: 478px;
 	margin: 0 auto;
 	border: 1px solid black;
 	height: 100vh;

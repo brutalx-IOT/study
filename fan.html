@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>brutalxIOT</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="layouts">
+		<section class="topbar">
+			<h3>brutalx-IOT</h3>
+		</section>
+		<section class="headers">
+			<h3>FAN CONTROL</h3>
+		</section>
+		<section class="fans">
+			<div class="fan">
+				<img src="assets/images/fan-off.png" id="fanOneImage" />
+				<p>Fan One</p>
+				<button id="fanOne" onclick="setFanOne()">TURN ON</button>
+			</div>
+			<div class="fan">
+				<img src="assets/images/fan-off.png" id="fanTwoImage" />
+				<p>Fan Two</p>
+				<button id="fanTwo" onclick="setFanTwo()">TURN ON</button>
+			</div>
+		</section>
+
+		<section class="bottombar">
+			<ul>
+				<li><a href="index.html"><i class="fa-solid fa-home"></i></a></li>
+				<li><a href="led.html"><i class="fa-solid fa-lightbulb"></i></a></li>
+				<li><a href="fan.html"><i class="fa-solid fa-fan"></i></a></li>
+			</ul>
+		</section>
+	</div>
+	<script src="javascripts/main.js" type="text/javascript"></script>
+</body>
+</html>

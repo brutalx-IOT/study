@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>brutalxIOT</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="layouts">
+		<section class="topbar">
+			<h3>brutalx-IOT</h3>
+		</section>
+		<section class="headers">
+			<h3>LED CONTROL</h3>
+		</section>
+		<section class="leds">
+			<div class="led">
+				<img src="assets/images/led-off.png" id="ledOneImage" />
+				<p>Led One</p>
+				<button id="ledOne" data-set="led1" onclick="setStatus(this)">TURN ON</button>
+			</div>
+			<div class="led">
+				<img src="assets/images/led-off.png" id="ledTwoImage" />
+				<p>Led Two</p>
+				<button id="ledTwo" data-set="led2" onclick="setStatus(this)">TURN ON</button>
+			</div>
+			<div class="led">
+				<img src="assets/images/led-off.png" id="ledRepeatImage" />
+				<p>Led Repeat</p>
+				<button id="ledRepeat" data-set="ledRepeat" onclick="setStatus(this)">TURN ON</button>
+			</div>
+			<div class="led">
+				<img src="assets/images/led-off.png" id="relayOneImage" />
+				<p>Relay One</p>
+				<button id="relayOne" data-set="relay1" onclick="setStatus(this)">TURN ON</button>
+			</div>
+			<div class="led">
+				<img src="assets/images/led-off.png" id="relayTwoImage" />
+				<p>Relay Two</p>
+				<button id="relayTwo" data-set="relay2" onclick="setStatus(this)">TURN ON</button>
+			</div>
+		</section>
+
+		<section class="bottombar">
+			<ul>
+				<li><a href="index.html"><i class="fa-solid fa-home"></i></a></li>
+				<li><a href="led.html"><i class="fa-solid fa-lightbulb"></i></a></li>
+				<li><a href="fan.html"><i class="fa-solid fa-fan"></i></a></li>
+			</ul>
+		</section>
+	</div>
+	<script src="javascripts/main.js"></script>
+</body>
+</html>

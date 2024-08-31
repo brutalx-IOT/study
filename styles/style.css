@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*, html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+.layouts {
+	max-width: 478px;
+	margin: 0 auto;
+	border: 1px solid black;
+	height: 100vh;
+	text-align: center;
+	position: relative;
+}
+
+
+.topbar {
+	background-color: #2a3240;
+	padding: 12px;
+}
+
+.topbar h3 {
+	font-weight: 800;
+	color: white;
+}
+
+.headers h3 {
+	padding: 10px;
+	font-weight: 700;
+}
+
+.items {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 40px;
+	gap: 10px;
+	height: calc(100vh - 100px);
+	overflow-y: scroll;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	gap: 10px;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0.5px #1f1f1f;
+}
+
+.item img {
+	width: 50%;
+}
+
+button {
+	background-color: #212429;
+	padding: 4px;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	font-weight: 700;
+}
+
+.leds {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 20px 40px;
+	gap: 20px;
+	height: calc(100vh - 150px);
+	overflow-y: scroll;
+}
+
+.led, .fan {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	gap: 10px;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0.5px #1f1f1f;
+}
+
+.led img, .fan img {
+	width: 100px;
+	object-fit: cover;
+}
+
+.led p, .fan p {
+	font-weight: 700;
+}
+
+.fans {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 20px 40px;
+	gap: 20px;
+}
+
+.bottombar {
+	bottom: 0;
+	position: absolute;
+	background-color: #2a3240;
+	width: 100%;
+	left: 0;
+	padding: 5px;
+}
+
+.bottombar ul {
+	display: flex;
+	list-style-type: none;
+}
+
+.bottombar ul li {
+	flex: 1;
+	text-align: center;
+}
+
+.bottombar ul li a {
+	font-size: x-large;
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+.bottombar ul li a:hover {
+	transition: all 0.3s ease-in-out;
+	color: orange;
+	scale: 115%;
+}

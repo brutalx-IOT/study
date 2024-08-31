@@ -1,4 +1,4 @@
-const endpoint = "http://10.0.21.232:8080";
+const endpoint = "https://b77a-103-208-204-162.ngrok-free.app/";
 
 function getStatus() {
 	fetch(endpoint + "/getStatus")
